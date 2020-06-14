@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts | Alastair Garner</title>
+    <link>/project/</link>
+      <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Posts</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 04 Jun 2020 11:46:10 -0400</lastBuildDate>
+    <image>
+      <url>/images/icon_hu86448f1ddfae89dbd5ea0885e83b103f_81064_512x512_fill_lanczos_center_2.png</url>
+      <title>Posts</title>
+      <link>/project/</link>
+    </image>
+    
+    <item>
+      <title>Bixi Stations</title>
+      <link>/project/2020-02-18-bixi-post/</link>
+      <pubDate>Thu, 04 Jun 2020 11:46:10 -0400</pubDate>
+      <guid>/project/2020-02-18-bixi-post/</guid>
+      <description>&lt;p&gt;A map of the Montreal Bixi Stations&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./bixi_mtl.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My Article Name</title>
+      <link>/project/my-article-name/</link>
+      <pubDate>Thu, 04 Jun 2020 11:46:10 -0400</pubDate>
+      <guid>/project/my-article-name/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Template Post</title>
+      <link>/project/template_post/</link>
+      <pubDate>Thu, 04 Jun 2020 11:46:10 -0400</pubDate>
+      <guid>/project/template_post/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Welcome to Jekyll!</title>
+      <link>/project/2020-02-14-welcome-to-jekyll/</link>
+      <pubDate>Fri, 14 Feb 2020 11:02:38 -0500</pubDate>
+      <guid>/project/2020-02-14-welcome-to-jekyll/</guid>
+      <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+&lt;p&gt;Jekyll requires blog post files to be named according to the following format:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;YEAR-MONTH-DAY-title.MARKUP&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Where &lt;code&gt;YEAR&lt;/code&gt; is a four-digit number, &lt;code&gt;MONTH&lt;/code&gt; and &lt;code&gt;DAY&lt;/code&gt; are both two-digit numbers, and &lt;code&gt;MARKUP&lt;/code&gt; is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;p&gt;{% highlight ruby %}
+def print_hi(name)
+puts &amp;ldquo;Hi, #{name}&amp;rdquo;
+end
+print_hi(&amp;lsquo;Tom&amp;rsquo;)
+#=&amp;gt; prints &amp;lsquo;Hi, Tom&amp;rsquo; to STDOUT.
+{% endhighlight %}&lt;/p&gt;
+&lt;p&gt;Check out the 
+&lt;a href=&#34;https://jekyllrb.com/docs/home&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at 
+&lt;a href=&#34;https://github.com/jekyll/jekyll&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on 
+&lt;a href=&#34;https://talk.jekyllrb.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Antidisestablishmentarianism</title>
+      <link>/project/2009-10-05-edge-case-title-should-not-overflow-the-content-area/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/project/2009-10-05-edge-case-title-should-not-overflow-the-content-area/</guid>
+      <description>&lt;p&gt;This post title has a long word that could potentially overflow the content area.&lt;/p&gt;
+&lt;p&gt;A few things to check for:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Non-breaking text in the title should have no adverse effects on layout or functionality.&lt;/li&gt;
+&lt;li&gt;Check the browser window / tab title.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The following CSS property will help you support non-breaking text.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;word-wrap: break-word;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Markup: HTML Elements and Formatting</title>
+      <link>/project/2013-01-11-markup-html-elements-and-formatting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/project/2013-01-11-markup-html-elements-and-formatting/</guid>
+      <description>&lt;p&gt;A variety of common HTML elements to demonstrate the theme&amp;rsquo;s stylesheet and verify they have been styled appropriately.&lt;/p&gt;
+&lt;h1 id=&#34;header-one&#34;&gt;Header one&lt;/h1&gt;
+&lt;h2 id=&#34;header-two&#34;&gt;Header two&lt;/h2&gt;
+&lt;h3 id=&#34;header-three&#34;&gt;Header three&lt;/h3&gt;
+&lt;h4 id=&#34;header-four&#34;&gt;Header four&lt;/h4&gt;
+&lt;h5 id=&#34;header-five&#34;&gt;Header five&lt;/h5&gt;
+&lt;h6 id=&#34;header-six&#34;&gt;Header six&lt;/h6&gt;
+&lt;h2 id=&#34;blockquotes&#34;&gt;Blockquotes&lt;/h2&gt;
+&lt;p&gt;Single line blockquote:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Stay hungry. Stay foolish.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Multi line blockquote with a cite reference:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;People think focus means saying yes to the thing you&amp;rsquo;ve got to focus on. But that&amp;rsquo;s not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick carefully. I&amp;rsquo;m actually as proud of the things we haven&amp;rsquo;t done as the things I have done. Innovation is saying no to 1,000 things.&lt;/p&gt;
+&lt;footer&gt;&lt;strong&gt;Steve Jobs&lt;/strong&gt; &amp;mdash; Apple Worldwide Developers&#39; Conference, 1997&lt;/footer&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Quoted text inline using &lt;code&gt;&amp;lt;q&amp;gt;&lt;/code&gt; element:&lt;/p&gt;
+&lt;p&gt;Luke continued, &lt;q&gt;And then she called him a &lt;q&gt;scruffy-looking nerf-herder&lt;/q&gt;! I think I’ve got a chance!&lt;/q&gt; The poor naive fool&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;tables&#34;&gt;Tables&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Employee&lt;/th&gt;
+&lt;th&gt;Salary&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;a href=&#34;#&#34;&gt;John Doe&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;$1&lt;/td&gt;
+&lt;td&gt;Because that&amp;rsquo;s all Steve Jobs needed for a salary.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;a href=&#34;#&#34;&gt;Jane Doe&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;$100K&lt;/td&gt;
+&lt;td&gt;For all the blogging she does.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;a href=&#34;#&#34;&gt;Fred Bloggs&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;$100M&lt;/td&gt;
+&lt;td&gt;Pictures are worth a thousand words, right? So Jane × 1,000.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;a href=&#34;#&#34;&gt;Jane Bloggs&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;$100B&lt;/td&gt;
+&lt;td&gt;With hair like that?! Enough said.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;Header1&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Header2&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;Header3&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;cell1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;cell2&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;cell3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;cell4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;cell5&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;cell6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;cell1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;cell2&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;cell3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;cell4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;cell5&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;cell6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;=============================&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Foot1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Foot2&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;Foot3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;definition-lists&#34;&gt;Definition Lists&lt;/h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;Definition List Title&lt;/dt&gt;
+&lt;dd&gt;Definition list division.&lt;/dd&gt;
+&lt;dt&gt;Startup&lt;/dt&gt;
+&lt;dd&gt;A startup company or startup is a company or temporary organization designed to search for a repeatable and scalable business model.&lt;/dd&gt;
+&lt;dt&gt;#dowork&lt;/dt&gt;
+&lt;dd&gt;Coined by Rob Dyrdek and his personal body guard Christopher &amp;ldquo;Big Black&amp;rdquo; Boykins, &amp;ldquo;Do Work&amp;rdquo; works as a self motivator, to motivating your friends.&lt;/dd&gt;
+&lt;dt&gt;Do It Live&lt;/dt&gt;
+&lt;dd&gt;I&amp;rsquo;ll let Bill O&amp;rsquo;Reilly 
+&lt;a href=&#34;https://www.youtube.com/watch?v=O_HyZ5aW76c&#34; title=&#34;We&amp;#39;ll Do It Live&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;explain&lt;/a&gt; this one.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;h2 id=&#34;unordered-lists-nested&#34;&gt;Unordered Lists (Nested)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;List item one
+&lt;ul&gt;
+&lt;li&gt;List item one
+&lt;ul&gt;
+&lt;li&gt;List item one&lt;/li&gt;
+&lt;li&gt;List item two&lt;/li&gt;
+&lt;li&gt;List item three&lt;/li&gt;
+&lt;li&gt;List item four&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;List item two&lt;/li&gt;
+&lt;li&gt;List item three&lt;/li&gt;
+&lt;li&gt;List item four&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;List item two&lt;/li&gt;
+&lt;li&gt;List item three&lt;/li&gt;
+&lt;li&gt;List item four&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;ordered-list-nested&#34;&gt;Ordered List (Nested)&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;List item one
+&lt;ol&gt;
+&lt;li&gt;List item one
+&lt;ol&gt;
+&lt;li&gt;List item one&lt;/li&gt;
+&lt;li&gt;List item two&lt;/li&gt;
+&lt;li&gt;List item three&lt;/li&gt;
+&lt;li&gt;List item four&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;List item two&lt;/li&gt;
+&lt;li&gt;List item three&lt;/li&gt;
+&lt;li&gt;List item four&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;List item two&lt;/li&gt;
+&lt;li&gt;List item three&lt;/li&gt;
+&lt;li&gt;List item four&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;buttons&#34;&gt;Buttons&lt;/h2&gt;
+&lt;p&gt;Make any link standout more when applying the &lt;code&gt;.btn&lt;/code&gt; class.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;a href=&amp;quot;#&amp;quot; class=&amp;quot;btn--success&amp;quot;&amp;gt;Success Button&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;
+&lt;a href=&#34;#&#34;&gt;Default Button&lt;/a&gt;{: .btn}
+
+&lt;a href=&#34;#&#34;&gt;Primary Button&lt;/a&gt;{: .btn .btn&amp;ndash;primary}
+
+&lt;a href=&#34;#&#34;&gt;Accent Button&lt;/a&gt;{: .btn .btn&amp;ndash;accent}
+
+&lt;a href=&#34;#&#34;&gt;Success Button&lt;/a&gt;{: .btn .btn&amp;ndash;success}
+
+&lt;a href=&#34;#&#34;&gt;Warning Button&lt;/a&gt;{: .btn .btn&amp;ndash;warning}
+
+&lt;a href=&#34;#&#34;&gt;Danger Button&lt;/a&gt;{: .btn .btn&amp;ndash;danger}
+
+&lt;a href=&#34;#&#34;&gt;Info Button&lt;/a&gt;{: .btn .btn&amp;ndash;info}
+
+&lt;a href=&#34;#&#34;&gt;Inverse Button&lt;/a&gt;{: .btn .btn&amp;ndash;inverse}
+
+&lt;a href=&#34;#&#34;&gt;Light Outline Button&lt;/a&gt;{: .btn .btn&amp;ndash;light-outline}&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;[Default Button Text](#link){: .btn}
+[Primary Button Text](#link){: .btn .btn--primary}
+[Accent Button Text](#link){: .btn .btn--accent}
+[Success Button Text](#link){: .btn .btn--success}
+[Warning Button Text](#link){: .btn .btn--warning}
+[Danger Button Text](#link){: .btn .btn--danger}
+[Info Button Text](#link){: .btn .btn--info}
+[Inverse Button](#link){: .btn .btn--inverse}
+[Light Outline Button](#link){: .btn .btn--light-outline}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;
+&lt;a href=&#34;#&#34;&gt;X-Large Button&lt;/a&gt;{: .btn .btn&amp;ndash;primary .btn&amp;ndash;x-large}
+
+&lt;a href=&#34;#&#34;&gt;Large Button&lt;/a&gt;{: .btn .btn&amp;ndash;primary .btn&amp;ndash;large}
+
+&lt;a href=&#34;#&#34;&gt;Default Button&lt;/a&gt;{: .btn .btn&amp;ndash;primary }
+
+&lt;a href=&#34;#&#34;&gt;Small Button&lt;/a&gt;{: .btn .btn&amp;ndash;primary .btn&amp;ndash;small}&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;[X-Large Button](#link){: .btn .btn--primary .btn--x-large}
+[Large Button](#link){: .btn .btn--primary .btn--large}
+[Default Button](#link){: .btn .btn--primary }
+[Small Button](#link){: .btn .btn--primary .btn--small}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;notices&#34;&gt;Notices&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Watch out!&lt;/strong&gt; This paragraph of text has been 
+&lt;a href=&#34;#&#34;&gt;emphasized&lt;/a&gt; with the &lt;code&gt;{: .notice}&lt;/code&gt; class.
+{: .notice}&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Watch out!&lt;/strong&gt; This paragraph of text has been 
+&lt;a href=&#34;#&#34;&gt;emphasized&lt;/a&gt; with the &lt;code&gt;{: .notice--primary}&lt;/code&gt; class.
+{: .notice&amp;ndash;primary}&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Watch out!&lt;/strong&gt; This paragraph of text has been 
+&lt;a href=&#34;#&#34;&gt;emphasized&lt;/a&gt; with the &lt;code&gt;{: .notice--accent}&lt;/code&gt; class.
+{: .notice&amp;ndash;accent}&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Watch out!&lt;/strong&gt; This paragraph of text has been 
+&lt;a href=&#34;#&#34;&gt;emphasized&lt;/a&gt; with the &lt;code&gt;{: .notice--info}&lt;/code&gt; class.
+{: .notice&amp;ndash;info}&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Watch out!&lt;/strong&gt; This paragraph of text has been 
+&lt;a href=&#34;#&#34;&gt;emphasized&lt;/a&gt; with the &lt;code&gt;{: .notice--warning}&lt;/code&gt; class.
+{: .notice&amp;ndash;warning}&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Watch out!&lt;/strong&gt; This paragraph of text has been 
+&lt;a href=&#34;#&#34;&gt;emphasized&lt;/a&gt; with the &lt;code&gt;{: .notice--success}&lt;/code&gt; class.
+{: .notice&amp;ndash;success}&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Watch out!&lt;/strong&gt; This paragraph of text has been 
+&lt;a href=&#34;#&#34;&gt;emphasized&lt;/a&gt; with the &lt;code&gt;{: .notice--danger}&lt;/code&gt; class.
+{: .notice&amp;ndash;danger}&lt;/p&gt;
+&lt;h2 id=&#34;address-element&#34;&gt;Address element&lt;/h2&gt;
+&lt;address&gt;
+  1 Infinite Loop&lt;br /&gt; Cupertino, CA 95014&lt;br /&gt; United States
+&lt;/address&gt;
+&lt;h2 id=&#34;anchor-element-aka-link&#34;&gt;Anchor element (aka. Link)&lt;/h2&gt;
+&lt;p&gt;This is an example of a 
+&lt;a href=&#34;http://apple.com&#34; title=&#34;Apple&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;abbreviation-element&#34;&gt;Abbreviation element&lt;/h2&gt;
+&lt;p&gt;The abbreviation CSS stands for &amp;ldquo;Cascading Style Sheets&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;*[CSS]: Cascading Style Sheets&lt;/p&gt;
+&lt;h2 id=&#34;cite-element&#34;&gt;Cite element&lt;/h2&gt;
+&lt;p&gt;&amp;ldquo;Code is poetry.&amp;rdquo; &amp;mdash;&lt;cite&gt;Automattic&lt;/cite&gt;&lt;/p&gt;
+&lt;h2 id=&#34;code-element&#34;&gt;Code element&lt;/h2&gt;
+&lt;p&gt;You will learn later on in these tests that &lt;code&gt;word-wrap: break-word;&lt;/code&gt; will be your best friend.&lt;/p&gt;
+&lt;h2 id=&#34;strike-element&#34;&gt;Strike element&lt;/h2&gt;
+&lt;p&gt;This element will let you &lt;strike&gt;strikeout text&lt;/strike&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;emphasize-element&#34;&gt;Emphasize element&lt;/h2&gt;
+&lt;p&gt;The emphasize element should &lt;em&gt;italicize&lt;/em&gt; text.&lt;/p&gt;
+&lt;h2 id=&#34;insert-element&#34;&gt;Insert element&lt;/h2&gt;
+&lt;p&gt;This element should denote &lt;ins&gt;inserted&lt;/ins&gt; text.&lt;/p&gt;
+&lt;h2 id=&#34;keyboard-element&#34;&gt;Keyboard element&lt;/h2&gt;
+&lt;p&gt;This scarcely known element emulates &lt;kbd&gt;keyboard text&lt;/kbd&gt;, which is usually styled like the &lt;code&gt;&amp;lt;code&amp;gt;&lt;/code&gt; element.&lt;/p&gt;
+&lt;h2 id=&#34;preformatted-element&#34;&gt;Preformatted element&lt;/h2&gt;
+&lt;p&gt;This element styles large blocks of code.&lt;/p&gt;
+&lt;pre&gt;
+.post-title {
+	margin: 0 0 5px;
+	font-weight: bold;
+	font-size: 38px;
+	line-height: 1.2;
+	and here&#39;s a line of some really, really, really, really long text, just to see how the PRE element handles it and to find out how it overflows;
+}
+&lt;/pre&gt;
+&lt;h2 id=&#34;quote-element&#34;&gt;Quote element&lt;/h2&gt;
+&lt;p&gt;&lt;q&gt;Developers, developers, developers…&lt;/q&gt; –Steve Ballmer&lt;/p&gt;
+&lt;h2 id=&#34;strong-element&#34;&gt;Strong element&lt;/h2&gt;
+&lt;p&gt;This element shows &lt;strong&gt;bold text&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;subscript-element&#34;&gt;Subscript element&lt;/h2&gt;
+&lt;p&gt;Getting our science styling on with H&lt;sub&gt;2&lt;/sub&gt;O, which should push the &amp;ldquo;2&amp;rdquo; down.&lt;/p&gt;
+&lt;h2 id=&#34;superscript-element&#34;&gt;Superscript element&lt;/h2&gt;
+&lt;p&gt;Still sticking with science and Isaac Newton&amp;rsquo;s E = MC&lt;sup&gt;2&lt;/sup&gt;, which should lift the 2 up.&lt;/p&gt;
+&lt;h2 id=&#34;variable-element&#34;&gt;Variable element&lt;/h2&gt;
+&lt;p&gt;This allows you to denote &lt;var&gt;variables&lt;/var&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Markup: Image Alignment</title>
+      <link>/project/2013-01-10-markup-image-alignment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/project/2013-01-10-markup-image-alignment/</guid>
+      <description>&lt;p&gt;The best way to demonstrate the ebb and flow of the various image positioning options is to nestle them snuggly among an ocean of words. Grab a paddle and let&amp;rsquo;s get started.&lt;/p&gt;
+&lt;p&gt;Assign classes with HTML:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;img src=&amp;quot;image.jpg&amp;quot; class=&amp;quot;align-left&amp;quot; alt=&amp;quot;&amp;quot;&amp;gt;
+&amp;lt;img src=&amp;quot;image.jpg&amp;quot; class=&amp;quot;align-center&amp;quot; alt=&amp;quot;&amp;quot;&amp;gt;
+&amp;lt;img src=&amp;quot;image.jpg&amp;quot; class=&amp;quot;align-right&amp;quot; alt=&amp;quot;&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Or use Kramdown and 
+&lt;a href=&#34;https://kramdown.gettalong.org/syntax.html#inline-attribute-lists&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;inline attribute lists&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;![left-aligned-image](image.jpg){: .align-left}
+![center-aligned-image](image.jpg){: .align-center}
+![right-aligned-image](image.jpg){: .align-right}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;![image-center]({{ &amp;lsquo;/images/image-alignment-580x300.jpg&amp;rsquo; | absolute_url }}){: .align-center}&lt;/p&gt;
+&lt;p&gt;The image should be &lt;strong&gt;centered&lt;/strong&gt; with the &lt;code&gt;.align-center&lt;/code&gt; class.&lt;/p&gt;
+&lt;p&gt;![image-left]({{ &amp;lsquo;/images/image-alignment-150x150.jpg&amp;rsquo; | absolute_url }}){: .align-left} The rest of this paragraph is filler for the sake of seeing the text wrap around the 150×150 image, which is &lt;strong&gt;left aligned&lt;/strong&gt; with the &lt;code&gt;.align-left&lt;/code&gt; class.&lt;/p&gt;
+&lt;p&gt;As you can see the should be some space above, below, and to the right of the image. The text should not be creeping on the image. Creeping is just not right. Images need breathing room too. Let them speak like you words. Let them do their jobs without any hassle from the text. In about one more sentence here, we&amp;rsquo;ll see that the text moves from the right of the image down below the image in seamless transition. Again, letting the do it&amp;rsquo;s thing. Mission accomplished!&lt;/p&gt;
+&lt;p&gt;And now for a &lt;strong&gt;massively large image&lt;/strong&gt; &amp;mdash; it has &lt;strong&gt;no alignment&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;![no-alignment]({{ &amp;lsquo;/images/image-alignment-1200x4002.jpg&amp;rsquo; | absolute_url }})&lt;/p&gt;
+&lt;p&gt;The image above, though &lt;code&gt;1200px&lt;/code&gt; wide, should not overflow the content area. It should remain contained with no visible disruption to the flow of content.&lt;/p&gt;
+&lt;p&gt;![image-right]({{ &amp;lsquo;/images/image-alignment-300x200.jpg&amp;rsquo; | absolute_url }}){: .align-right}&lt;/p&gt;
+&lt;p&gt;And now we&amp;rsquo;re going to shift things to the &lt;strong&gt;right&lt;/strong&gt; with the &lt;code&gt;.align-right&lt;/code&gt; class. Again, there should be plenty of room above, below, and to the left of the image. Just look at him there &amp;mdash; Hey guy! Way to rock that right side. I don&amp;rsquo;t care what the left aligned image says, you look great. Don&amp;rsquo;t let anyone else tell you differently.&lt;/p&gt;
+&lt;p&gt;In just a bit here, you should see the text start to wrap below the right aligned image and settle in nicely. There should still be plenty of room and everything should be sitting pretty. Yeah &amp;mdash; Just like that. It never felt so good to be right.&lt;/p&gt;
+&lt;p&gt;And just when you thought we were done, we&amp;rsquo;re going to do them all over again with captions!&lt;/p&gt;
+&lt;figure class=&#34;align-center&#34;&gt;
+  &lt;a href=&#34;#&#34;&gt;&lt;img src=&#34;{{ &#39;/images/image-alignment-580x300.jpg&#39; | absolute_url }}&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Look at 580 x 300 &lt;a href=&#34;#&#34;&gt;getting some&lt;/a&gt; love.&lt;/figcaption&gt;
+&lt;/figure&gt; 
+&lt;p&gt;The figure above happens to be &lt;strong&gt;centered&lt;/strong&gt;. The caption also has a link in it, just to see if it does anything funky.&lt;/p&gt;
+&lt;figure style=&#34;width: 150px&#34; class=&#34;align-left&#34;&gt;
+  &lt;img src=&#34;{{ &#39;/images/image-alignment-150x150.jpg&#39; | absolute_url }}&#34; alt=&#34;&#34;&gt;
+  &lt;figcaption&gt;Itty-bitty caption.&lt;/figcaption&gt;
+&lt;/figure&gt; 
+&lt;p&gt;The rest of this paragraph is filler for the sake of seeing the text wrap around the 150×150 image, which is &lt;strong&gt;left aligned&lt;/strong&gt; with the &lt;code&gt;.align-left&lt;/code&gt; class.&lt;/p&gt;
+&lt;p&gt;As you can see the should be some space above, below, and to the right of the image. The text should not be creeping on the image. Creeping is just not right. Images need breathing room too. Let them speak like you words. Let them do their jobs without any hassle from the text. In about one more sentence here, we&amp;rsquo;ll see that the text moves from the right of the image down below the image in seamless transition. Again, letting the do it&amp;rsquo;s thing. Mission accomplished!&lt;/p&gt;
+&lt;p&gt;And now for a massively large image with &lt;strong&gt;no alignment&lt;/strong&gt;.&lt;/p&gt;
+&lt;figure style=&#34;width: 1200px&#34;&gt;
+  &lt;img src=&#34;{{ &#39;/images/image-alignment-1200x4002.jpg&#39; | absolute_url }}&#34; alt=&#34;&#34;&gt;
+  &lt;figcaption&gt;Massive image comment for your eyeballs.&lt;/figcaption&gt;
+&lt;/figure&gt; 
+&lt;p&gt;The figure element above has an inline style of &lt;code&gt;width: 1200px&lt;/code&gt; set which should cause it to break outside of the normal content flow.&lt;/p&gt;
+&lt;figure style=&#34;width: 300px&#34; class=&#34;align-right&#34;&gt;
+  &lt;img src=&#34;{{ &#39;/images/image-alignment-300x200.jpg&#39; | absolute_url }}&#34; alt=&#34;&#34;&gt;
+  &lt;figcaption&gt;Feels good to be on the right.&lt;/figcaption&gt;
+&lt;/figure&gt; 
+&lt;p&gt;And now we&amp;rsquo;re going to shift things to the &lt;strong&gt;right&lt;/strong&gt; with the &lt;code&gt;.align-right&lt;/code&gt; class. Again, there should be plenty of room above, below, and to the left of the image. Just look at him there &amp;mdash; Hey guy! Way to rock that right side. I don&amp;rsquo;t care what the left aligned image says, you look great. Don&amp;rsquo;t let anyone else tell you differently.&lt;/p&gt;
+&lt;p&gt;In just a bit here, you should see the text start to wrap below the right aligned image and settle in nicely. There should still be plenty of room and everything should be sitting pretty. Yeah &amp;mdash; Just like that. It never felt so good to be right.&lt;/p&gt;
+&lt;p&gt;And that&amp;rsquo;s a wrap, yo! You survived the tumultuous waters of alignment. Image alignment achievement unlocked!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Post: Link</title>
+      <link>/project/2010-03-07-post-link/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/project/2010-03-07-post-link/</guid>
+      <description>&lt;p&gt;This theme supports &lt;strong&gt;link posts&lt;/strong&gt;, made famous by John Gruber. To use, just add &lt;code&gt;link: http://url-you-want-linked&lt;/code&gt; to the post&amp;rsquo;s YAML front matter and you&amp;rsquo;re done.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;And this is how a quote looks.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Some 
+&lt;a href=&#34;#&#34;&gt;link&lt;/a&gt; can also be shown.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Post: Modified Date</title>
+      <link>/project/2010-01-07-post-modified/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/project/2010-01-07-post-modified/</guid>
+      <description>&lt;p&gt;This post has been updated and should show a modified date if &lt;code&gt;last_modified_at&lt;/code&gt; is used in the layout.&lt;/p&gt;
+&lt;p&gt;Plugins like 
+&lt;a href=&#34;https://github.com/jekyll/jekyll-feed&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;jekyll-sitemap&lt;/strong&gt;&lt;/a&gt; use this field to add a &lt;code&gt;&amp;lt;lastmod&amp;gt;&lt;/code&gt; tag your &lt;code&gt;sitemap.xml&lt;/code&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Post: Quote</title>
+      <link>/project/2010-02-05-post-quote/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/project/2010-02-05-post-quote/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Only one thing is impossible for God: To find any sense in any copyright law on the planet.&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;&lt;a href=&#34;http://www.brainyquote.com/quotes/quotes/m/marktwain163473.html&#34;&gt;Mark Twain&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Post: Standard</title>
+      <link>/project/2010-01-07-post-standard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/project/2010-01-07-post-standard/</guid>
+      <description>&lt;p&gt;All children, except one, grow up. They soon know that they will grow up, and the way Wendy knew was this. One day when she was two years old she was playing in a garden, and she plucked another flower and ran with it to her mother. I suppose she must have looked rather delightful, for Mrs. Darling put her hand to her heart and cried, &amp;ldquo;Oh, why can&amp;rsquo;t you remain like this for ever!&amp;rdquo; This was all that passed between them on the subject, but henceforth Wendy knew that she must grow up. You always know after you are two. Two is the beginning of the end.&lt;/p&gt;
+&lt;p&gt;Mrs. Darling first heard of Peter when she was tidying up her children&amp;rsquo;s minds. It is the nightly custom of every good mother after her children are asleep to rummage in their minds and put things straight for next morning, repacking into their proper places the many articles that have wandered during the day.&lt;/p&gt;
+&lt;p&gt;This post has a manual excerpt &lt;code&gt;&amp;lt;!--more--&amp;gt;&lt;/code&gt; set after the second paragraph. The following YAML Front Matter has also be applied:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;excerpt_separator: &amp;quot;&amp;lt;!--more--&amp;gt;&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you could keep awake (but of course you can&amp;rsquo;t) you would see your own mother doing this, and you would find it very interesting to watch her. It is quite like tidying up drawers. You would see her on her knees, I expect, lingering humorously over some of your contents, wondering where on earth you had picked this thing up, making discoveries sweet and not so sweet, pressing this to her cheek as if it were as nice as a kitten, and hurriedly stowing that out of sight. When you wake in the morning, the naughtiness and evil passions with which you went to bed have been folded up small and placed at the bottom of your mind and on the top, beautifully aired, are spread out your prettier thoughts, ready for you to put on.&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t know whether you have ever seen a map of a person&amp;rsquo;s mind. Doctors sometimes draw maps of other parts of you, and your own map can become intensely interesting, but catch them trying to draw a map of a child&amp;rsquo;s mind, which is not only confused, but keeps going round all the time. There are zigzag lines on it, just like your temperature on a card, and these are probably roads in the island, for the Neverland is always more or less an island, with astonishing splashes of colour here and there, and coral reefs and rakish-looking craft in the offing, and savages and lonely lairs, and gnomes who are mostly tailors, and caves through which a river runs, and princes with six elder brothers, and a hut fast going to decay, and one very small old lady with a hooked nose. It would be an easy map if that were all, but there is also first day at school, religion, fathers, the round pond, needle-work, murders, hangings, verbs that take the dative, chocolate pudding day, getting into braces, say ninety-nine, three-pence for pulling out your tooth yourself, and so on, and either these are part of the island or they are another map showing through, and it is all rather confusing, especially as nothing will stand still.&lt;/p&gt;
+&lt;p&gt;Of course the Neverlands vary a good deal. John&amp;rsquo;s, for instance, had a lagoon with flamingoes flying over it at which John was shooting, while Michael, who was very small, had a flamingo with lagoons flying over it. John lived in a boat turned upside down on the sands, Michael in a wigwam, Wendy in a house of leaves deftly sewn together. John had no friends, Michael had friends at night, Wendy had a pet wolf forsaken by its parents, but on the whole the Neverlands have a family resemblance, and if they stood still in a row you could say of them that they have each other&amp;rsquo;s nose, and so forth. On these magic shores children at play are for ever beaching their coracles [simple boat]. We too have been there; we can still hear the sound of the surf, though we shall land no more.&lt;/p&gt;
+&lt;p&gt;Of all delectable islands the Neverland is the snuggest and most compact, not large and sprawly, you know, with tedious distances between one adventure and another, but nicely crammed. When you play at it by day with the chairs and table-cloth, it is not in the least alarming, but in the two minutes before you go to sleep it becomes very real. That is why there are night-lights.&lt;/p&gt;
+&lt;p&gt;Occasionally in her travels through her children&amp;rsquo;s minds Mrs. Darling found things she could not understand, and of these quite the most perplexing was the word Peter. She knew of no Peter, and yet he was here and there in John and Michael&amp;rsquo;s minds, while Wendy&amp;rsquo;s began to be scrawled all over with him. The name stood out in bolder letters than any of the other words, and as Mrs. Darling gazed she felt that it had an oddly cocky appearance.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicio? Bene ... tunc ibimus? Quis uh ... CONEXUS locus his diebus? Quisque semper aliquid videtur, in volutpat mauris. Nolo enim dicere. Vobis neque ab aliis. Ego feci memetipsum explicans. Gus mortuus est. Lorem opus habeo. Jackson Isai? Tu quoque ... A te quidem a ante. Vos scitis quod blinking res Ive &#39;been vocans super vos? Et conteram illud, et conteram hoc. Maledicant druggie excors. Iam hoc tu facere conatus sum ad te in omni tempore? Ludum mutavit. Verbum est ex. Et ... sunt occid</title>
+      <link>/project/2009-10-05-edge-case-very-long-title/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/project/2009-10-05-edge-case-very-long-title/</guid>
+      <description>&lt;p&gt;Check for long titles and how they might break layouts.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

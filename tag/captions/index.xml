@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>captions | Alastair Garner</title>
+    <link>/tag/captions/</link>
+      <atom:link href="/tag/captions/index.xml" rel="self" type="application/rss+xml" />
+    <description>captions</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <image>
+      <url>/images/icon_hu86448f1ddfae89dbd5ea0885e83b103f_81064_512x512_fill_lanczos_center_2.png</url>
+      <title>captions</title>
+      <link>/tag/captions/</link>
+    </image>
+    
+    <item>
+      <title>Markup: Image Alignment</title>
+      <link>/project/2013-01-10-markup-image-alignment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/project/2013-01-10-markup-image-alignment/</guid>
+      <description>&lt;p&gt;The best way to demonstrate the ebb and flow of the various image positioning options is to nestle them snuggly among an ocean of words. Grab a paddle and let&amp;rsquo;s get started.&lt;/p&gt;
+&lt;p&gt;Assign classes with HTML:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;img src=&amp;quot;image.jpg&amp;quot; class=&amp;quot;align-left&amp;quot; alt=&amp;quot;&amp;quot;&amp;gt;
+&amp;lt;img src=&amp;quot;image.jpg&amp;quot; class=&amp;quot;align-center&amp;quot; alt=&amp;quot;&amp;quot;&amp;gt;
+&amp;lt;img src=&amp;quot;image.jpg&amp;quot; class=&amp;quot;align-right&amp;quot; alt=&amp;quot;&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Or use Kramdown and 
+&lt;a href=&#34;https://kramdown.gettalong.org/syntax.html#inline-attribute-lists&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;inline attribute lists&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;![left-aligned-image](image.jpg){: .align-left}
+![center-aligned-image](image.jpg){: .align-center}
+![right-aligned-image](image.jpg){: .align-right}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;![image-center]({{ &amp;lsquo;/images/image-alignment-580x300.jpg&amp;rsquo; | absolute_url }}){: .align-center}&lt;/p&gt;
+&lt;p&gt;The image should be &lt;strong&gt;centered&lt;/strong&gt; with the &lt;code&gt;.align-center&lt;/code&gt; class.&lt;/p&gt;
+&lt;p&gt;![image-left]({{ &amp;lsquo;/images/image-alignment-150x150.jpg&amp;rsquo; | absolute_url }}){: .align-left} The rest of this paragraph is filler for the sake of seeing the text wrap around the 150×150 image, which is &lt;strong&gt;left aligned&lt;/strong&gt; with the &lt;code&gt;.align-left&lt;/code&gt; class.&lt;/p&gt;
+&lt;p&gt;As you can see the should be some space above, below, and to the right of the image. The text should not be creeping on the image. Creeping is just not right. Images need breathing room too. Let them speak like you words. Let them do their jobs without any hassle from the text. In about one more sentence here, we&amp;rsquo;ll see that the text moves from the right of the image down below the image in seamless transition. Again, letting the do it&amp;rsquo;s thing. Mission accomplished!&lt;/p&gt;
+&lt;p&gt;And now for a &lt;strong&gt;massively large image&lt;/strong&gt; &amp;mdash; it has &lt;strong&gt;no alignment&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;![no-alignment]({{ &amp;lsquo;/images/image-alignment-1200x4002.jpg&amp;rsquo; | absolute_url }})&lt;/p&gt;
+&lt;p&gt;The image above, though &lt;code&gt;1200px&lt;/code&gt; wide, should not overflow the content area. It should remain contained with no visible disruption to the flow of content.&lt;/p&gt;
+&lt;p&gt;![image-right]({{ &amp;lsquo;/images/image-alignment-300x200.jpg&amp;rsquo; | absolute_url }}){: .align-right}&lt;/p&gt;
+&lt;p&gt;And now we&amp;rsquo;re going to shift things to the &lt;strong&gt;right&lt;/strong&gt; with the &lt;code&gt;.align-right&lt;/code&gt; class. Again, there should be plenty of room above, below, and to the left of the image. Just look at him there &amp;mdash; Hey guy! Way to rock that right side. I don&amp;rsquo;t care what the left aligned image says, you look great. Don&amp;rsquo;t let anyone else tell you differently.&lt;/p&gt;
+&lt;p&gt;In just a bit here, you should see the text start to wrap below the right aligned image and settle in nicely. There should still be plenty of room and everything should be sitting pretty. Yeah &amp;mdash; Just like that. It never felt so good to be right.&lt;/p&gt;
+&lt;p&gt;And just when you thought we were done, we&amp;rsquo;re going to do them all over again with captions!&lt;/p&gt;
+&lt;figure class=&#34;align-center&#34;&gt;
+  &lt;a href=&#34;#&#34;&gt;&lt;img src=&#34;{{ &#39;/images/image-alignment-580x300.jpg&#39; | absolute_url }}&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Look at 580 x 300 &lt;a href=&#34;#&#34;&gt;getting some&lt;/a&gt; love.&lt;/figcaption&gt;
+&lt;/figure&gt; 
+&lt;p&gt;The figure above happens to be &lt;strong&gt;centered&lt;/strong&gt;. The caption also has a link in it, just to see if it does anything funky.&lt;/p&gt;
+&lt;figure style=&#34;width: 150px&#34; class=&#34;align-left&#34;&gt;
+  &lt;img src=&#34;{{ &#39;/images/image-alignment-150x150.jpg&#39; | absolute_url }}&#34; alt=&#34;&#34;&gt;
+  &lt;figcaption&gt;Itty-bitty caption.&lt;/figcaption&gt;
+&lt;/figure&gt; 
+&lt;p&gt;The rest of this paragraph is filler for the sake of seeing the text wrap around the 150×150 image, which is &lt;strong&gt;left aligned&lt;/strong&gt; with the &lt;code&gt;.align-left&lt;/code&gt; class.&lt;/p&gt;
+&lt;p&gt;As you can see the should be some space above, below, and to the right of the image. The text should not be creeping on the image. Creeping is just not right. Images need breathing room too. Let them speak like you words. Let them do their jobs without any hassle from the text. In about one more sentence here, we&amp;rsquo;ll see that the text moves from the right of the image down below the image in seamless transition. Again, letting the do it&amp;rsquo;s thing. Mission accomplished!&lt;/p&gt;
+&lt;p&gt;And now for a massively large image with &lt;strong&gt;no alignment&lt;/strong&gt;.&lt;/p&gt;
+&lt;figure style=&#34;width: 1200px&#34;&gt;
+  &lt;img src=&#34;{{ &#39;/images/image-alignment-1200x4002.jpg&#39; | absolute_url }}&#34; alt=&#34;&#34;&gt;
+  &lt;figcaption&gt;Massive image comment for your eyeballs.&lt;/figcaption&gt;
+&lt;/figure&gt; 
+&lt;p&gt;The figure element above has an inline style of &lt;code&gt;width: 1200px&lt;/code&gt; set which should cause it to break outside of the normal content flow.&lt;/p&gt;
+&lt;figure style=&#34;width: 300px&#34; class=&#34;align-right&#34;&gt;
+  &lt;img src=&#34;{{ &#39;/images/image-alignment-300x200.jpg&#39; | absolute_url }}&#34; alt=&#34;&#34;&gt;
+  &lt;figcaption&gt;Feels good to be on the right.&lt;/figcaption&gt;
+&lt;/figure&gt; 
+&lt;p&gt;And now we&amp;rsquo;re going to shift things to the &lt;strong&gt;right&lt;/strong&gt; with the &lt;code&gt;.align-right&lt;/code&gt; class. Again, there should be plenty of room above, below, and to the left of the image. Just look at him there &amp;mdash; Hey guy! Way to rock that right side. I don&amp;rsquo;t care what the left aligned image says, you look great. Don&amp;rsquo;t let anyone else tell you differently.&lt;/p&gt;
+&lt;p&gt;In just a bit here, you should see the text start to wrap below the right aligned image and settle in nicely. There should still be plenty of room and everything should be sitting pretty. Yeah &amp;mdash; Just like that. It never felt so good to be right.&lt;/p&gt;
+&lt;p&gt;And that&amp;rsquo;s a wrap, yo! You survived the tumultuous waters of alignment. Image alignment achievement unlocked!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
