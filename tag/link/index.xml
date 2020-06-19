@@ -14,6 +14,20 @@
     
     <item>
       <title>Post: Link</title>
+      <link>/post/2010-03-07-post-link/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/post/2010-03-07-post-link/</guid>
+      <description>&lt;p&gt;This theme supports &lt;strong&gt;link posts&lt;/strong&gt;, made famous by John Gruber. To use, just add &lt;code&gt;link: http://url-you-want-linked&lt;/code&gt; to the post&amp;rsquo;s YAML front matter and you&amp;rsquo;re done.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;And this is how a quote looks.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Some 
+&lt;a href=&#34;#&#34;&gt;link&lt;/a&gt; can also be shown.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Post: Link</title>
       <link>/project/2010-03-07-post-link/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/project/2010-03-07-post-link/</guid>

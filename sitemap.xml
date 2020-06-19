@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>/post/2020-02-18-bixi-post/</loc>
+    <lastmod>2020-06-04T11:46:10-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/project/2020-02-18-bixi-post/</loc>
     <lastmod>2020-06-04T11:46:10-04:00</lastmod>
   </url>
@@ -53,6 +58,11 @@
   </url>
   
   <url>
+    <loc>/post/2020-02-14-welcome-to-jekyll/</loc>
+    <lastmod>2020-02-14T11:02:38-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/project/2020-02-14-welcome-to-jekyll/</loc>
     <lastmod>2020-02-14T11:02:38-05:00</lastmod>
   </url>
@@ -63,10 +73,6 @@
   
   <url>
     <loc>/tag/alignment/</loc>
-  </url>
-  
-  <url>
-    <loc>/project/2009-10-05-edge-case-title-should-not-overflow-the-content-area/</loc>
   </url>
   
   <url>
@@ -118,7 +124,15 @@
   </url>
   
   <url>
+    <loc>/post/2013-01-11-markup-html-elements-and-formatting/</loc>
+  </url>
+  
+  <url>
     <loc>/project/2013-01-11-markup-html-elements-and-formatting/</loc>
+  </url>
+  
+  <url>
+    <loc>/post/2013-01-10-markup-image-alignment/</loc>
   </url>
   
   <url>
@@ -134,7 +148,15 @@
   </url>
   
   <url>
+    <loc>/post/2010-03-07-post-link/</loc>
+  </url>
+  
+  <url>
     <loc>/project/2010-03-07-post-link/</loc>
+  </url>
+  
+  <url>
+    <loc>/post/2010-01-07-post-modified/</loc>
   </url>
   
   <url>
@@ -142,7 +164,15 @@
   </url>
   
   <url>
+    <loc>/post/2010-02-05-post-quote/</loc>
+  </url>
+  
+  <url>
     <loc>/project/2010-02-05-post-quote/</loc>
+  </url>
+  
+  <url>
+    <loc>/post/2010-01-07-post-standard/</loc>
   </url>
   
   <url>
@@ -171,6 +201,10 @@
   
   <url>
     <loc>/tag/standard/</loc>
+  </url>
+  
+  <url>
+    <loc>/post/2009-10-05-edge-case-very-long-title/</loc>
   </url>
   
   <url>
