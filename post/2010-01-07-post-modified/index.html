@@ -44,6 +44,9 @@ Plugins like jekyll-sitemap use this field to add a &lt;lastmod&gt; tag your sit
 
   
   
+  
+  <script src="/js/mathjax-config.js"></script>
+  
 
   
   
@@ -174,9 +177,9 @@ Plugins like jekyll-sitemap use this field to add a &lt;lastmod&gt; tag your sit
 
       
       
-        
-      
 
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
       
     
       
@@ -192,7 +195,7 @@ Plugins like jekyll-sitemap use this field to add a &lt;lastmod&gt; tag your sit
   
   
   
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:ital,wght@0,300;0,400;1,300%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:ital,wght@0,400;0,600;1,400;1,600%7CFira+Sans:ital,wght@0,400;0,600;1,400;1,600%7COpen+Sans:ital,wght@0,400;0,600;1,400;1,600%7CRoboto+Mono&display=swap">
   
 
   
@@ -215,8 +218,8 @@ Plugins like jekyll-sitemap use this field to add a &lt;lastmod&gt; tag your sit
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu86448f1ddfae89dbd5ea0885e83b103f_81064_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu86448f1ddfae89dbd5ea0885e83b103f_81064_192x192_fill_lanczos_center_2.png">
+  <link rel="icon" type="image/png" href="/images/icon_huf528fd1d809e1d757eb4ab560eb85567_26447_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_huf528fd1d809e1d757eb4ab560eb85567_26447_192x192_fill_lanczos_center_2.png">
 
   <link rel="canonical" href="/post/2010-01-07-post-modified/">
 
@@ -288,7 +291,7 @@ Plugins like jekyll-sitemap use this field to add a &lt;lastmod&gt; tag your sit
     "name": "Alastair Garner",
     "logo": {
       "@type": "ImageObject",
-      "url": "/images/icon_hu86448f1ddfae89dbd5ea0885e83b103f_81064_192x192_fill_lanczos_center_2.png"
+      "url": "/images/logo.svg"
     }
   },
   "description": "This post has been updated and should show a modified date if last_modified_at is used in the layout.\nPlugins like jekyll-sitemap use this field to add a \u0026lt;lastmod\u0026gt; tag your sitemap."
@@ -310,6 +313,29 @@ Plugins like jekyll-sitemap use this field to add a &lt;lastmod&gt; tag your sit
 
 
   <title>Post: Modified Date | Alastair Garner</title>
+
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$','$$'], ['\\[', '\\]']],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  
+    window.addEventListener('load', (event) => {
+        document.querySelectorAll("mjx-container").forEach(function(x){
+          x.parentElement.classList += 'has-jax'})
+      });
+  
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 </head>
 
@@ -354,13 +380,16 @@ Plugins like jekyll-sitemap use this field to add a &lt;lastmod&gt; tag your sit
 
 
 
+  
+
 
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/">Alastair Garner</a>
+      <a class="navbar-brand" href="/">
+        Alastair Garner</a>
     </div>
     
 
@@ -373,13 +402,13 @@ Plugins like jekyll-sitemap use this field to add a &lt;lastmod&gt; tag your sit
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/">Alastair Garner</a>
+      <a class="navbar-brand" href="/"><img src="/images/logo.svg" alt="Alastair Garner"></a>
     </div>
     
 
     
     
-    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
 
       
       <ul class="navbar-nav d-md-inline-flex">
@@ -408,7 +437,7 @@ Plugins like jekyll-sitemap use this field to add a &lt;lastmod&gt; tag your sit
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#about"><span>Home</span></a>
+          <a class="nav-link " href="/#about"><span>About</span></a>
         </li>
 
         
@@ -437,7 +466,7 @@ Plugins like jekyll-sitemap use this field to add a &lt;lastmod&gt; tag your sit
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+          <a class="nav-link " href="/#projects"><span>Posts</span></a>
         </li>
 
         
@@ -758,13 +787,13 @@ Plugins like jekyll-sitemap use this field to add a &lt;lastmod&gt; tag your sit
     <div class="media author-card content-widget-hr">
       
         
-        <img class="avatar mr-3 avatar-circle" src="/author/alastair-garner/avatar_hu52a603635ecebd45650b162dadabb4e5_12861_270x270_fill_q90_lanczos_center.jpg" alt="Alastair Garner">
+        <img class="avatar mr-3 avatar-circle" src="/author/alastair-garner/avatar_hucd8ae15fb908b805fb78595d4d9620f2_368413_270x270_fill_q90_lanczos_center.jpeg" alt="Alastair Garner">
       
 
       <div class="media-body">
         <h5 class="card-title"><a href="/">Alastair Garner</a></h5>
         <h6 class="card-subtitle">Data Scientist</h6>
-        <p class="card-text">My research interests include distributed robotics, mobile computing and programmable matter.</p>
+        <p class="card-text">This is my mini bio section</p>
         <ul class="network-icon" aria-hidden="true">
   
     
@@ -843,9 +872,9 @@ Plugins like jekyll-sitemap use this field to add a &lt;lastmod&gt; tag your sit
       
       <li><a href="/project/2010-01-07-post-modified/">Post: Modified Date</a></li>
       
-      <li><a href="/project/2010-01-07-post-standard/">Post: Standard</a></li>
-      
       <li><a href="/post/2010-01-07-post-standard/">Post: Standard</a></li>
+      
+      <li><a href="/project/2010-01-07-post-standard/">Post: Standard</a></li>
       
       <li><a href="/post/2010-03-07-post-link/">Post: Link</a></li>
       

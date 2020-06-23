@@ -7,7 +7,7 @@
     <description>Alastair Garner</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 04 Jun 2020 11:46:10 -0400</lastBuildDate>
     <image>
-      <url>/images/icon_hu86448f1ddfae89dbd5ea0885e83b103f_81064_512x512_fill_lanczos_center_2.png</url>
+      <url>/images/logo.svg</url>
       <title>Alastair Garner</title>
       <link>/</link>
     </image>
@@ -29,6 +29,224 @@
       <guid>/project/2020-02-18-bixi-post/</guid>
       <description>&lt;p&gt;A map of the Montreal Bixi Stations&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;./bixi_mtl.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Generating beautiful pdfs with Markdown and Pandoc</title>
+      <link>/project/2020-06-20-thesis-in-pandoc/</link>
+      <pubDate>Thu, 04 Jun 2020 11:46:10 -0400</pubDate>
+      <guid>/project/2020-06-20-thesis-in-pandoc/</guid>
+      <description>&lt;h1 id=&#34;writing-a-thesis-with-markdown-and-latex&#34;&gt;Writing a thesis with Markdown and LaTeX&lt;/h1&gt;
+&lt;p&gt;While this start as some textbook procrastination, my foray into the the worlds of Markdown, LaTex and pandoc revolutionised the way I write and note-take.&lt;/p&gt;
+&lt;p&gt;What started as some textbook procrastination, to avoid the start of my thesis-writing, ended up as&lt;/p&gt;
+&lt;p&gt;Writing a thesis can be a painful experience and one that conjures parental-like  (spoken as a non-parent).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Markdown is a joy to write in&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;latex offers you endless option to style and typeset you thesis&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;referencing is straightforward&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;requirements&#34;&gt;Requirements&lt;/h1&gt;
+&lt;h2 id=&#34;markdown-editor&#34;&gt;Markdown Editor&lt;/h2&gt;
+&lt;p&gt;Markdown, as a plain text language, can be written with just about any text editor that you would like (gedit, vim, nano, Atom, VS Code). Ultimately, this is the interface you&amp;rsquo;ll be looking at for the majority of your writing and edits, so pick whichever program you are happiest working in.&lt;/p&gt;
+&lt;p&gt;Personally, this is the part where I fell in love with 
+&lt;a href=&#34;https://typora.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Typora&lt;/a&gt;. The interface is clean and super aesthetic, offering little distraction between yourself and putting words on the page. It also renders markdown as you type - as opposed a bare-bones text editor.&lt;/p&gt;
+&lt;p&gt;Recommend looking at my example - if you don&amp;rsquo;t like it, you don&amp;rsquo;t need to keep reading!&lt;/p&gt;
+&lt;h2 id=&#34;latex&#34;&gt;Latex&lt;/h2&gt;
+&lt;p&gt;Ultimately, $\LaTeX$ is the system used to format your plain-text manuscript into a beautifully typeset pdf file. It&amp;rsquo;s available for all systems and can be downloaded from 
+&lt;a href=&#34;https://www.latex-project.org/get/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;pandoc&#34;&gt;Pandoc&lt;/h2&gt;
+&lt;p&gt;Pandoc&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Markdown editor (*Optional, but recommended)&lt;/li&gt;
+&lt;li&gt;Latex ($\LaTeX$, specifically XeTeX)&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/jgm/pandoc&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pandoc&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/lierdakil/pandoc-crossref&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pandoc-crossref&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;organising-your-workflow&#34;&gt;Organising your workflow&lt;/h1&gt;
+&lt;p&gt;Unlike writing with classical &amp;ldquo;rich-text&amp;rdquo; editors like Word/LibreOffice/OpenOffice, the formatting and styling of your thesis are defined in standalone files. On first thought this might seem frustrating, or even impractical, but it actually offers remarkable flexibility. For instance, if you decide you want to switch all your headings from a serif to a sans serif font, bump them up to 16pt and centre them, this can be done with a one line change, rather than manually editing every header.&lt;/p&gt;
+&lt;p&gt;The following folder structure is the particular one I used in writing my thesis, but is by no means a gold standard. The structure and file names are all up to your own discretion.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;thesis/
+├── figs/
+├── pandoc-crossref
+├── references.bib 
+├── style.csl
+├── options.yaml
+├── header.tex
+├── titlepage.tex (optional)
+└── thesis.md
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I empathise with anyone who looks at this file structure, with five peculiar file types, and is a little off-put. But worry not, I&amp;rsquo;ll explain.&lt;/p&gt;
+&lt;p&gt;Files you need not edit&amp;hellip;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;figs&lt;/strong&gt; folder is where you can store any images or figures to be included in the document.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;pandoc-crossref&lt;/strong&gt; is simply the executable file need to correctly format references in our document.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;style.csl&lt;/strong&gt; is a file that contains the citation style you&amp;rsquo;d like to use in your document. Csl files for most journals can be found on 
+&lt;a href=&#34;https://www.zotero.org/styles&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Zotero.org&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;references.bib&lt;/strong&gt; is the file that contains all your references. You can generate this file by exporting your references from whichever citation manager you use, be that Mendeley, EndNote, Zotero, etc.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Files you should edit&amp;hellip;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;options.yaml&lt;/strong&gt; allows you to list command line options to pass to pandoc, instructing it on how to generate your typeset thesis.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;header.tex&lt;/strong&gt; allows you to add any $\LaTeX$ packages or commands to modify the formatting of your document .&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;titlepage.tex&lt;/strong&gt; is an &lt;em&gt;optional&lt;/em&gt; file allowing you to define a custom title page, if the default is not to your liking.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;thesis.md&lt;/strong&gt; contains the actual content of your thesis.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;writing-in-markdown&#34;&gt;Writing in markdown&lt;/h1&gt;
+&lt;p&gt;If you&amp;rsquo;re already familiar with Markdown, feel free to jump straight to the next section.&lt;/p&gt;
+&lt;p&gt;Writing in markdown&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{markdown}&#34;&gt;# Chapter
+
+## Subheading
+
+### Subsubheading
+
+Some text with a point I&#39;d like to **emphasise**.
+
+A *Species name* that just begs for some italics.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+&lt;p&gt;which will render like this in your markdown editor&amp;hellip;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./img/markdown_demo_0001.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Realistically, for 99% of your thesis-writing, this is all the markdown know-how you really need. Remember, at this point you need not worry about font, size, colour, or any other styling of your actually thesis. This is just about getting &lt;strong&gt;words on the page&lt;/strong&gt;. Markdown makes this clean and aesthetic.&lt;/p&gt;
+&lt;h2 id=&#34;citations&#34;&gt;Citations&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;ll admit, the Mendeley plugin in MS Word has done me solid service through my undergrad, but referencing in Markdown (more specifically, with LaTeX), is almost as straightforward.  The first thing you need to do is export your list of references to a &lt;em&gt;.bib&lt;/em&gt; file (BibTeX format) from your reference manager. This is simple enough in Mendeley (&lt;em&gt;File &amp;gt; Export&lt;/em&gt;) and I&amp;rsquo;m sure the same can be said for other reference managers.&lt;/p&gt;
+&lt;p&gt;The second thing you need to do is work out which citation style you want to use. In some cases this may be a strict guideline set by you institution, but in my case I just picked the journal whose style I liked best (Current Biology). Having worked this out, head to 
+&lt;a href=&#34;https://www.zotero.org/styles&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;zotero.org&lt;/a&gt; and download the &lt;em&gt;.csl&lt;/em&gt; file for your desired citation style.&lt;/p&gt;
+&lt;p&gt;All that&amp;rsquo;s left to do is to start dropping citations in your manuscript. To do this, you need to know the &amp;lsquo;citation key&amp;rsquo; for the paper in question, which is set by your reference manager. In my case, Mendeley lists citation keys as &lt;em&gt;LastNameYYYY&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./img/citation_key.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This handle can be used to plonk the citation into your text with this simple syntax,&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;Previous literature has outlined the utility of using &#39;pandoc&#39; to convert Markdown files to pdf files [@LastName2019], though many still rely on rich-text editors for writing theses.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In your final pdf, this will render both a hyperlinked (clickable) reference, as well as the bibliography entry, both with the specified citation style.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;&#34; alt=&#34;Image&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;figures&#34;&gt;Figures&lt;/h2&gt;
+&lt;p&gt;I have tried to repress the memories of battles lost against MS Word, trying to arrange images, only for them to vanish, hang off pages or decapitate paragraphs. Blissfully, inserting images or figures into markdown is (almost) entirely pain free. Namely, when generating a pdf with pandoc, figure placement is automatic, giving full pages to large figures, or tactfully inserting smalerl figures above of below text - no manual manoeuvring!&lt;/p&gt;
+&lt;p&gt;I recommend creating a separate directory for figures, simply to keep your working directory uncluttered. Pandoc and LaTeX can handle all conventional bitmap image formats (png, jpeg), but more importantly they can also handle vector-based images; eps, pdf and svg (enabled by the built-in rsvg-convert package). From here, some Markdown editors (like Typora) will allow you to drag and drop images into whichever line you like. Alternatively, you can type out the following syntax to insert you image:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;![An example figure.](./figs/figure.png){#fig:one}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Your figure caption should be entered within the square brackets, while the path to the image (relative or absolute) is placed between the parentheses. Alternatively, you can link remote image files with a URL from your personal cloud storage, image repo, or anywhere else on the internet, and they will be incorporated into your pdf.&lt;/p&gt;
+&lt;p&gt;The curly brackets are an optional syntax (enabled by the pandoc-crossref extension) allowing you to create a figure handle, with which you can create within-document hyperlinks, allowing you to jump from text to figure. Define the handle with &lt;code&gt; {#fig:my_handle}&lt;/code&gt; and you can deploy the link, like so:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;Making within-document links to figures is easy, as outlined in [@fig:my_handle].
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;image&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Just make sure that handles for different figures are unique!&lt;/p&gt;
+&lt;p&gt;It is even possible to do subfigure referencing with pandoc-crossref, though I have not tried it myself. Instead, I settled to reference subfigures as &lt;code&gt;[@fig:my_handle]B&lt;/code&gt;, which reads as &amp;ldquo;fig. 1B&amp;rdquo; in the final pdf.&lt;/p&gt;
+&lt;h2 id=&#34;yaml-metadata&#34;&gt;Yaml metadata&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/LaTeX_project_logo_bird.svg/1200px-LaTeX_project_logo_bird.svg.png&#34; alt=&#34;Bill Murray&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;
+&lt;h1 id=&#34;converting-to-pdf&#34;&gt;Converting to pdf&lt;/h1&gt;
+&lt;p&gt;Step up to the microphone, &lt;em&gt;pandoc&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Pandoc is the a wonderful tool that will let you convert plain text documents to just about any format you like. HTML? Walk in the park. Pdf? Yeah, no problem. Presentation slides? Hold my beer&amp;hellip;&lt;/p&gt;
+&lt;p&gt;The gist of our Markdown to pdf conversion is that it takes the basic syntax of Markdown (heading, subheading, bold, italics, etc), translates that into equivalent LaTeX syntax, then uses this to generate the fully fledged pdf.&lt;/p&gt;
+&lt;h2 id=&#34;basic-usage&#34;&gt;Basic usage&lt;/h2&gt;
+&lt;p&gt;To start, you&amp;rsquo;ll need to navigate to your project folder in your terminal. You can then enter the following command (on Mac or Ubuntu):&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;pandoc -o thesis.pdf thesis.md
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;At it&amp;rsquo;s most&lt;/p&gt;
+&lt;p&gt;Pandoc has a formidable host of options, allowing you to specify the&lt;/p&gt;
+&lt;p&gt;At it&amp;rsquo;s most basic, default formatting&lt;/p&gt;
+&lt;p&gt;Adding command line options&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;options.yaml&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Adding styling&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;header.tex&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;making-it-pretty&#34;&gt;Making it pretty&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;custom titlepage&lt;/li&gt;
+&lt;li&gt;custom fonts&lt;/li&gt;
+&lt;li&gt;redefining heading/subheadings&lt;/li&gt;
+&lt;li&gt;adding supplemental figures
+&lt;ul&gt;
+&lt;li&gt;forcing bibliography location&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;other&#34;&gt;Other&lt;/h1&gt;
+&lt;p&gt;With Typora and other dynamically rendered Markdown editors this image should appear continuous with your text.&lt;/p&gt;
+&lt;p&gt;&amp;hellip;which renders like this.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./figures/figure.png&#34; alt=&#34;An example figure. With a simple caption&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./figs/grey_test.pdf&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Better still, by downloading the 
+&lt;a href=&#34;https://github.com/lierdakil/pandoc-crossref&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;pandoc-crossref&lt;/a&gt; package&lt;/p&gt;
+&lt;h1 id=&#34;structure&#34;&gt;Structure&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;for the love of simple formatting (not as true as you think)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Why do this?
+&lt;ul&gt;
+&lt;li&gt;Dislike for rich-text editors&lt;/li&gt;
+&lt;li&gt;Love of markdown (if yet unfound)&lt;/li&gt;
+&lt;li&gt;automatic toc &amp;amp; reference formatting&lt;/li&gt;
+&lt;li&gt;automatic figure placement&lt;/li&gt;
+&lt;li&gt;beautiful, consistent formatting&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Why not do this?
+&lt;ul&gt;
+&lt;li&gt;need for WYSIWYG&lt;/li&gt;
+&lt;li&gt;don&amp;rsquo;t want to learn a little latex&lt;/li&gt;
+&lt;li&gt;desire not to debug&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;So why not just use Latex?&lt;/li&gt;
+&lt;li&gt;Requirements&lt;/li&gt;
+&lt;li&gt;Referencing
+&lt;ul&gt;
+&lt;li&gt;Supplementals&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Figure referencing&lt;/li&gt;
+&lt;li&gt;Importing figures&lt;/li&gt;
+&lt;li&gt;Making your own title page&lt;/li&gt;
+&lt;li&gt;On using svgs&lt;/li&gt;
+&lt;li&gt;Special characters (degrees, superscript &amp;amp; subscript)&lt;/li&gt;
+&lt;li&gt;A word on R Markdown&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;troubleshooting&#34;&gt;Troubleshooting&lt;/h1&gt;
+&lt;h2 id=&#34;citations-1&#34;&gt;Citations&lt;/h2&gt;
+&lt;p&gt;Should you ever find that your citations are not appearing in your pdf, or pandoc is telling you that citations keys are missing, here are two likely causes:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;You&amp;rsquo;ve added a new paper to your library since you last exported a .bib file - you&amp;rsquo;ll need to export this file whenever you update your library.&lt;/li&gt;
+&lt;li&gt;You&amp;rsquo;re using the wrong citation key. Some keys may have a suffix (e.g. &lt;em&gt;Smith2009a&lt;/em&gt;) in cases where multiple files exist with the same lastname and date, or where you have duplicate files in your library. You can check either the .bib file or your citation manager to find the correct citation key.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;figures-1&#34;&gt;Figures&lt;/h2&gt;
+&lt;p&gt;I did hit a couple of snags with figures:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Long captions on tall figures do not obey the bottom margin, nor the bottom of the page, so can run into page numbers or even off of the page. I&amp;rsquo;m sure there is a fix for this, it just might take some googling. This can be avoided if your figure arrangement is flexible.&lt;/li&gt;
+&lt;li&gt;Editing figure captions in Typora can be a little frustrating (you&amp;rsquo;ll find out why). Just switch to &amp;lsquo;Source Code Mode&amp;rsquo; and it&amp;rsquo;s much easier.&lt;/li&gt;
+&lt;li&gt;If you want to include supplmental figures, you have to employ a little trick to get them to reference properly (see later in this doc).&lt;/li&gt;
+&lt;li&gt;The svg files I tested (generated in MATLAB) sometimes rendered strangely in the final pdf, especially regarding text. I resolved this by installing Inkscape (vector editing software) and downloading the &lt;em&gt;pandoc-svg&lt;/em&gt; filter (included in my github repo), which uses Inkscape, rather than rsvg-convert, to convert svg files to pdfs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;the-short-version&#34;&gt;The short version&lt;/h1&gt;
+&lt;h1 id=&#34;heading-2&#34;&gt;&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     

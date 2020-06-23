@@ -1,0 +1,1254 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Alastair Garner">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Writing a thesis in Markdown is a far more enjoyable experience than the something o ">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/project/2020-06-20-thesis-in-pandoc/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#EF525B">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:ital,wght@0,400;0,600;1,400;1,600%7CFira+Sans:ital,wght@0,400;0,600;1,400;1,600%7COpen+Sans:ital,wght@0,400;0,600;1,400;1,600%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_huf528fd1d809e1d757eb4ab560eb85567_26447_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_huf528fd1d809e1d757eb4ab560eb85567_26447_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/project/2020-06-20-thesis-in-pandoc/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@GarnerAlastair">
+  <meta property="twitter:creator" content="@GarnerAlastair">
+  
+  <meta property="og:site_name" content="Alastair Garner">
+  <meta property="og:url" content="/project/2020-06-20-thesis-in-pandoc/">
+  <meta property="og:title" content="Generating beautiful pdfs with Markdown and Pandoc | Alastair Garner">
+  <meta property="og:description" content="Writing a thesis in Markdown is a far more enjoyable experience than the something o "><meta property="og:image" content="/project/2020-06-20-thesis-in-pandoc/featured.png">
+  <meta property="twitter:image" content="/project/2020-06-20-thesis-in-pandoc/featured.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2020-06-04T11:46:10-04:00">
+    
+    <meta property="article:modified_time" content="2020-06-04T11:46:10-04:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/project/2020-06-20-thesis-in-pandoc/"
+  },
+  "headline": "Generating beautiful pdfs with Markdown and Pandoc",
+  
+  "image": [
+    "/project/2020-06-20-thesis-in-pandoc/featured.png"
+  ],
+  
+  "datePublished": "2020-06-04T11:46:10-04:00",
+  "dateModified": "2020-06-04T11:46:10-04:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Alastair Garner"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Alastair Garner",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/images/logo.svg"
+    }
+  },
+  "description": "Writing a thesis in Markdown is a far more enjoyable experience than the something o "
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Generating beautiful pdfs with Markdown and Pandoc | Alastair Garner</title>
+
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$','$$'], ['\\[', '\\]']],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  
+    window.addEventListener('load', (event) => {
+        document.querySelectorAll("mjx-container").forEach(function(x){
+          x.parentElement.classList += 'has-jax'})
+      });
+  
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">
+        Alastair Garner</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/"><img src="/images/logo.svg" alt="Alastair Garner"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>About</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/files/cv.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article article-project">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+<div class="article-container pt-3">
+  <h1>Generating beautiful pdfs with Markdown and Pandoc</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jun 4, 2020
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 202px;">
+  <div style="position: relative">
+    <img src="/project/2020-06-20-thesis-in-pandoc/featured_hu31c5fca060030dca0001d503cf7c8c30_21081_720x0_resize_lanczos_2.png" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h1 id="writing-a-thesis-with-markdown-and-latex">Writing a thesis with Markdown and LaTeX</h1>
+<p>While this start as some textbook procrastination, my foray into the the worlds of Markdown, LaTex and pandoc revolutionised the way I write and note-take.</p>
+<p>What started as some textbook procrastination, to avoid the start of my thesis-writing, ended up as</p>
+<p>Writing a thesis can be a painful experience and one that conjures parental-like  (spoken as a non-parent).</p>
+<ul>
+<li>
+<p>Markdown is a joy to write in</p>
+</li>
+<li>
+<p>latex offers you endless option to style and typeset you thesis</p>
+</li>
+<li>
+<p>referencing is straightforward</p>
+</li>
+<li></li>
+</ul>
+<h1 id="requirements">Requirements</h1>
+<h2 id="markdown-editor">Markdown Editor</h2>
+<p>Markdown, as a plain text language, can be written with just about any text editor that you would like (gedit, vim, nano, Atom, VS Code). Ultimately, this is the interface you&rsquo;ll be looking at for the majority of your writing and edits, so pick whichever program you are happiest working in.</p>
+<p>Personally, this is the part where I fell in love with 
+<a href="https://typora.io/" target="_blank" rel="noopener">Typora</a>. The interface is clean and super aesthetic, offering little distraction between yourself and putting words on the page. It also renders markdown as you type - as opposed a bare-bones text editor.</p>
+<p>Recommend looking at my example - if you don&rsquo;t like it, you don&rsquo;t need to keep reading!</p>
+<h2 id="latex">Latex</h2>
+<p>Ultimately, $\LaTeX$ is the system used to format your plain-text manuscript into a beautifully typeset pdf file. It&rsquo;s available for all systems and can be downloaded from 
+<a href="https://www.latex-project.org/get/" target="_blank" rel="noopener">here</a>.</p>
+<h2 id="pandoc">Pandoc</h2>
+<p>Pandoc</p>
+<ul>
+<li>Markdown editor (*Optional, but recommended)</li>
+<li>Latex ($\LaTeX$, specifically XeTeX)</li>
+<li>
+<a href="https://github.com/jgm/pandoc" target="_blank" rel="noopener">Pandoc</a></li>
+<li>
+<a href="https://github.com/lierdakil/pandoc-crossref" target="_blank" rel="noopener">Pandoc-crossref</a></li>
+</ul>
+<h1 id="organising-your-workflow">Organising your workflow</h1>
+<p>Unlike writing with classical &ldquo;rich-text&rdquo; editors like Word/LibreOffice/OpenOffice, the formatting and styling of your thesis are defined in standalone files. On first thought this might seem frustrating, or even impractical, but it actually offers remarkable flexibility. For instance, if you decide you want to switch all your headings from a serif to a sans serif font, bump them up to 16pt and centre them, this can be done with a one line change, rather than manually editing every header.</p>
+<p>The following folder structure is the particular one I used in writing my thesis, but is by no means a gold standard. The structure and file names are all up to your own discretion.</p>
+<pre><code>thesis/
+├── figs/
+├── pandoc-crossref
+├── references.bib 
+├── style.csl
+├── options.yaml
+├── header.tex
+├── titlepage.tex (optional)
+└── thesis.md
+</code></pre>
+<p>I empathise with anyone who looks at this file structure, with five peculiar file types, and is a little off-put. But worry not, I&rsquo;ll explain.</p>
+<p>Files you need not edit&hellip;</p>
+<ul>
+<li>
+<p><strong>figs</strong> folder is where you can store any images or figures to be included in the document.</p>
+</li>
+<li>
+<p><strong>pandoc-crossref</strong> is simply the executable file need to correctly format references in our document.</p>
+</li>
+<li>
+<p><strong>style.csl</strong> is a file that contains the citation style you&rsquo;d like to use in your document. Csl files for most journals can be found on 
+<a href="https://www.zotero.org/styles" target="_blank" rel="noopener">Zotero.org</a>.</p>
+</li>
+<li>
+<p><strong>references.bib</strong> is the file that contains all your references. You can generate this file by exporting your references from whichever citation manager you use, be that Mendeley, EndNote, Zotero, etc.</p>
+</li>
+</ul>
+<p>Files you should edit&hellip;</p>
+<ul>
+<li><strong>options.yaml</strong> allows you to list command line options to pass to pandoc, instructing it on how to generate your typeset thesis.</li>
+<li><strong>header.tex</strong> allows you to add any $\LaTeX$ packages or commands to modify the formatting of your document .</li>
+<li><strong>titlepage.tex</strong> is an <em>optional</em> file allowing you to define a custom title page, if the default is not to your liking.</li>
+<li><strong>thesis.md</strong> contains the actual content of your thesis.</li>
+</ul>
+<h1 id="writing-in-markdown">Writing in markdown</h1>
+<p>If you&rsquo;re already familiar with Markdown, feel free to jump straight to the next section.</p>
+<p>Writing in markdown</p>
+<pre><code class="language-{markdown}"># Chapter
+
+## Subheading
+
+### Subsubheading
+
+Some text with a point I'd like to **emphasise**.
+
+A *Species name* that just begs for some italics.
+</code></pre>
+<h1 id="heading"></h1>
+<p>which will render like this in your markdown editor&hellip;</p>
+<p><img src="./img/markdown_demo_0001.png" alt=""></p>
+<p>Realistically, for 99% of your thesis-writing, this is all the markdown know-how you really need. Remember, at this point you need not worry about font, size, colour, or any other styling of your actually thesis. This is just about getting <strong>words on the page</strong>. Markdown makes this clean and aesthetic.</p>
+<h2 id="citations">Citations</h2>
+<p>I&rsquo;ll admit, the Mendeley plugin in MS Word has done me solid service through my undergrad, but referencing in Markdown (more specifically, with LaTeX), is almost as straightforward.  The first thing you need to do is export your list of references to a <em>.bib</em> file (BibTeX format) from your reference manager. This is simple enough in Mendeley (<em>File &gt; Export</em>) and I&rsquo;m sure the same can be said for other reference managers.</p>
+<p>The second thing you need to do is work out which citation style you want to use. In some cases this may be a strict guideline set by you institution, but in my case I just picked the journal whose style I liked best (Current Biology). Having worked this out, head to 
+<a href="https://www.zotero.org/styles" target="_blank" rel="noopener">zotero.org</a> and download the <em>.csl</em> file for your desired citation style.</p>
+<p>All that&rsquo;s left to do is to start dropping citations in your manuscript. To do this, you need to know the &lsquo;citation key&rsquo; for the paper in question, which is set by your reference manager. In my case, Mendeley lists citation keys as <em>LastNameYYYY</em>.</p>
+<p><img src="./img/citation_key.png" alt=""></p>
+<p>This handle can be used to plonk the citation into your text with this simple syntax,</p>
+<pre><code class="language-markdown">Previous literature has outlined the utility of using 'pandoc' to convert Markdown files to pdf files [@LastName2019], though many still rely on rich-text editors for writing theses.
+</code></pre>
+<p>In your final pdf, this will render both a hyperlinked (clickable) reference, as well as the bibliography entry, both with the specified citation style.</p>
+<p><img src="" alt="Image"></p>
+<h2 id="figures">Figures</h2>
+<p>I have tried to repress the memories of battles lost against MS Word, trying to arrange images, only for them to vanish, hang off pages or decapitate paragraphs. Blissfully, inserting images or figures into markdown is (almost) entirely pain free. Namely, when generating a pdf with pandoc, figure placement is automatic, giving full pages to large figures, or tactfully inserting smalerl figures above of below text - no manual manoeuvring!</p>
+<p>I recommend creating a separate directory for figures, simply to keep your working directory uncluttered. Pandoc and LaTeX can handle all conventional bitmap image formats (png, jpeg), but more importantly they can also handle vector-based images; eps, pdf and svg (enabled by the built-in rsvg-convert package). From here, some Markdown editors (like Typora) will allow you to drag and drop images into whichever line you like. Alternatively, you can type out the following syntax to insert you image:</p>
+<pre><code class="language-markdown">![An example figure.](./figs/figure.png){#fig:one}
+</code></pre>
+<p>Your figure caption should be entered within the square brackets, while the path to the image (relative or absolute) is placed between the parentheses. Alternatively, you can link remote image files with a URL from your personal cloud storage, image repo, or anywhere else on the internet, and they will be incorporated into your pdf.</p>
+<p>The curly brackets are an optional syntax (enabled by the pandoc-crossref extension) allowing you to create a figure handle, with which you can create within-document hyperlinks, allowing you to jump from text to figure. Define the handle with <code> {#fig:my_handle}</code> and you can deploy the link, like so:</p>
+<pre><code class="language-markdown">Making within-document links to figures is easy, as outlined in [@fig:my_handle].
+</code></pre>
+<p><em>image</em></p>
+<p>Just make sure that handles for different figures are unique!</p>
+<p>It is even possible to do subfigure referencing with pandoc-crossref, though I have not tried it myself. Instead, I settled to reference subfigures as <code>[@fig:my_handle]B</code>, which reads as &ldquo;fig. 1B&rdquo; in the final pdf.</p>
+<h2 id="yaml-metadata">Yaml metadata</h2>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/LaTeX_project_logo_bird.svg/1200px-LaTeX_project_logo_bird.svg.png" alt="Bill Murray"></p>
+<h1 id="heading-1"></h1>
+<h1 id="converting-to-pdf">Converting to pdf</h1>
+<p>Step up to the microphone, <em>pandoc</em>.</p>
+<p>Pandoc is the a wonderful tool that will let you convert plain text documents to just about any format you like. HTML? Walk in the park. Pdf? Yeah, no problem. Presentation slides? Hold my beer&hellip;</p>
+<p>The gist of our Markdown to pdf conversion is that it takes the basic syntax of Markdown (heading, subheading, bold, italics, etc), translates that into equivalent LaTeX syntax, then uses this to generate the fully fledged pdf.</p>
+<h2 id="basic-usage">Basic usage</h2>
+<p>To start, you&rsquo;ll need to navigate to your project folder in your terminal. You can then enter the following command (on Mac or Ubuntu):</p>
+<pre><code class="language-shell">pandoc -o thesis.pdf thesis.md
+</code></pre>
+<p>At it&rsquo;s most</p>
+<p>Pandoc has a formidable host of options, allowing you to specify the</p>
+<p>At it&rsquo;s most basic, default formatting</p>
+<p>Adding command line options</p>
+<ul>
+<li>options.yaml</li>
+</ul>
+<p>Adding styling</p>
+<ul>
+<li>header.tex</li>
+</ul>
+<h1 id="making-it-pretty">Making it pretty</h1>
+<ul>
+<li>custom titlepage</li>
+<li>custom fonts</li>
+<li>redefining heading/subheadings</li>
+<li>adding supplemental figures
+<ul>
+<li>forcing bibliography location</li>
+</ul>
+</li>
+<li></li>
+</ul>
+<h1 id="other">Other</h1>
+<p>With Typora and other dynamically rendered Markdown editors this image should appear continuous with your text.</p>
+<p>&hellip;which renders like this.</p>
+<p><img src="./figures/figure.png" alt="An example figure. With a simple caption"></p>
+<p><img src="./figs/grey_test.pdf" alt=""></p>
+<p>Better still, by downloading the 
+<a href="https://github.com/lierdakil/pandoc-crossref" target="_blank" rel="noopener">pandoc-crossref</a> package</p>
+<h1 id="structure">Structure</h1>
+<ul>
+<li>
+<h2 id="intro">Intro</h2>
+<ul>
+<li>for the love of simple formatting (not as true as you think)</li>
+</ul>
+</li>
+<li>Why do this?
+<ul>
+<li>Dislike for rich-text editors</li>
+<li>Love of markdown (if yet unfound)</li>
+<li>automatic toc &amp; reference formatting</li>
+<li>automatic figure placement</li>
+<li>beautiful, consistent formatting</li>
+</ul>
+</li>
+<li>Why not do this?
+<ul>
+<li>need for WYSIWYG</li>
+<li>don&rsquo;t want to learn a little latex</li>
+<li>desire not to debug</li>
+</ul>
+</li>
+<li>So why not just use Latex?</li>
+<li>Requirements</li>
+<li>Referencing
+<ul>
+<li>Supplementals</li>
+</ul>
+</li>
+<li>Figure referencing</li>
+<li>Importing figures</li>
+<li>Making your own title page</li>
+<li>On using svgs</li>
+<li>Special characters (degrees, superscript &amp; subscript)</li>
+<li>A word on R Markdown</li>
+</ul>
+<h1 id="troubleshooting">Troubleshooting</h1>
+<h2 id="citations-1">Citations</h2>
+<p>Should you ever find that your citations are not appearing in your pdf, or pandoc is telling you that citations keys are missing, here are two likely causes:</p>
+<ol>
+<li>You&rsquo;ve added a new paper to your library since you last exported a .bib file - you&rsquo;ll need to export this file whenever you update your library.</li>
+<li>You&rsquo;re using the wrong citation key. Some keys may have a suffix (e.g. <em>Smith2009a</em>) in cases where multiple files exist with the same lastname and date, or where you have duplicate files in your library. You can check either the .bib file or your citation manager to find the correct citation key.</li>
+</ol>
+<h2 id="figures-1">Figures</h2>
+<p>I did hit a couple of snags with figures:</p>
+<ul>
+<li>Long captions on tall figures do not obey the bottom margin, nor the bottom of the page, so can run into page numbers or even off of the page. I&rsquo;m sure there is a fix for this, it just might take some googling. This can be avoided if your figure arrangement is flexible.</li>
+<li>Editing figure captions in Typora can be a little frustrating (you&rsquo;ll find out why). Just switch to &lsquo;Source Code Mode&rsquo; and it&rsquo;s much easier.</li>
+<li>If you want to include supplmental figures, you have to employ a little trick to get them to reference properly (see later in this doc).</li>
+<li>The svg files I tested (generated in MATLAB) sometimes rendered strangely in the final pdf, especially regarding text. I resolved this by installing Inkscape (vector editing software) and downloading the <em>pandoc-svg</em> filter (included in my github repo), which uses Inkscape, rather than rsvg-convert, to convert svg files to pdfs.</li>
+</ul>
+<h1 id="the-short-version">The short version</h1>
+<h1 id="heading-2"></h1>
+<pre><code>
+</code></pre>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/project/2020-06-20-thesis-in-pandoc/&amp;text=Generating%20beautiful%20pdfs%20with%20Markdown%20and%20Pandoc" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/project/2020-06-20-thesis-in-pandoc/&amp;t=Generating%20beautiful%20pdfs%20with%20Markdown%20and%20Pandoc" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Generating%20beautiful%20pdfs%20with%20Markdown%20and%20Pandoc&amp;body=/project/2020-06-20-thesis-in-pandoc/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/project/2020-06-20-thesis-in-pandoc/&amp;title=Generating%20beautiful%20pdfs%20with%20Markdown%20and%20Pandoc" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Generating%20beautiful%20pdfs%20with%20Markdown%20and%20Pandoc%20/project/2020-06-20-thesis-in-pandoc/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/project/2020-06-20-thesis-in-pandoc/&amp;title=Generating%20beautiful%20pdfs%20with%20Markdown%20and%20Pandoc" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+    
+    
+    
+      
+    
+    
+    
+    <div class="media author-card content-widget-hr">
+      
+        
+        <img class="avatar mr-3 avatar-circle" src="/author/alastair-garner/avatar_hucd8ae15fb908b805fb78595d4d9620f2_368413_270x270_fill_q90_lanczos_center.jpeg" alt="Alastair Garner">
+      
+
+      <div class="media-body">
+        <h5 class="card-title"><a href="/">Alastair Garner</a></h5>
+        <h6 class="card-subtitle">Data Scientist</h6>
+        <p class="card-text">This is my mini bio section</p>
+        <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/alastairgarner@outlook.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/GarnerAlastair" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/alastairgarner" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+    <div class="project-related-pages content-widget-hr">
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+    </div>
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.37431be2d92d7fb0160054761ab79602.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
