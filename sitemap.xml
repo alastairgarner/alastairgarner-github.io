@@ -8,47 +8,12 @@
   </url>
   
   <url>
-    <loc>/post/2020-02-18-bixi-post/</loc>
-    <lastmod>2020-06-04T11:46:10-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/2020-02-18-bixi-post/</loc>
-    <lastmod>2020-06-04T11:46:10-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/2020-06-20-thesis-in-pandoc/</loc>
-    <lastmod>2020-06-04T11:46:10-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/my-article-name/</loc>
-    <lastmod>2020-06-04T11:46:10-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/my-article-name/</loc>
-    <lastmod>2020-06-04T11:46:10-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/post/</loc>
     <lastmod>2020-06-04T11:46:10-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/project/</loc>
-    <lastmod>2020-06-04T11:46:10-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/post/template_post/</loc>
-    <lastmod>2020-06-04T11:46:10-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/template_post/</loc>
     <lastmod>2020-06-04T11:46:10-04:00</lastmod>
   </url>
   
@@ -63,12 +28,12 @@
   </url>
   
   <url>
-    <loc>/post/2020-02-14-welcome-to-jekyll/</loc>
+    <loc>/project/</loc>
     <lastmod>2020-02-14T11:02:38-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/project/2020-02-14-welcome-to-jekyll/</loc>
+    <loc>/project/2020-02-14-template/</loc>
     <lastmod>2020-02-14T11:02:38-05:00</lastmod>
   </url>
   
@@ -77,111 +42,7 @@
   </url>
   
   <url>
-    <loc>/tag/alignment/</loc>
-  </url>
-  
-  <url>
     <loc>/authors/</loc>
-  </url>
-  
-  <url>
-    <loc>/tag/captions/</loc>
-  </url>
-  
-  <url>
-    <loc>/tag/content/</loc>
-  </url>
-  
-  <url>
-    <loc>/tag/css/</loc>
-  </url>
-  
-  <url>
-    <loc>/category/edge-case/</loc>
-  </url>
-  
-  <url>
-    <loc>/tag/edge-case/</loc>
-  </url>
-  
-  <url>
-    <loc>/tag/html/</loc>
-  </url>
-  
-  <url>
-    <loc>/tag/image/</loc>
-  </url>
-  
-  <url>
-    <loc>/tag/layout/</loc>
-  </url>
-  
-  <url>
-    <loc>/tag/link/</loc>
-  </url>
-  
-  <url>
-    <loc>/category/markup/</loc>
-  </url>
-  
-  <url>
-    <loc>/tag/markup/</loc>
-  </url>
-  
-  <url>
-    <loc>/post/2013-01-11-markup-html-elements-and-formatting/</loc>
-  </url>
-  
-  <url>
-    <loc>/project/2013-01-11-markup-html-elements-and-formatting/</loc>
-  </url>
-  
-  <url>
-    <loc>/post/2013-01-10-markup-image-alignment/</loc>
-  </url>
-  
-  <url>
-    <loc>/project/2013-01-10-markup-image-alignment/</loc>
-  </url>
-  
-  <url>
-    <loc>/tag/post-formats/</loc>
-  </url>
-  
-  <url>
-    <loc>/category/post-formats/</loc>
-  </url>
-  
-  <url>
-    <loc>/post/2010-03-07-post-link/</loc>
-  </url>
-  
-  <url>
-    <loc>/project/2010-03-07-post-link/</loc>
-  </url>
-  
-  <url>
-    <loc>/post/2010-01-07-post-modified/</loc>
-  </url>
-  
-  <url>
-    <loc>/project/2010-01-07-post-modified/</loc>
-  </url>
-  
-  <url>
-    <loc>/post/2010-02-05-post-quote/</loc>
-  </url>
-  
-  <url>
-    <loc>/project/2010-02-05-post-quote/</loc>
-  </url>
-  
-  <url>
-    <loc>/post/2010-01-07-post-standard/</loc>
-  </url>
-  
-  <url>
-    <loc>/project/2010-01-07-post-standard/</loc>
   </url>
   
   <url>
@@ -193,35 +54,11 @@
   </url>
   
   <url>
-    <loc>/tag/quote/</loc>
-  </url>
-  
-  <url>
-    <loc>/tag/readability/</loc>
-  </url>
-  
-  <url>
     <loc>/talk/</loc>
   </url>
   
   <url>
-    <loc>/tag/standard/</loc>
-  </url>
-  
-  <url>
-    <loc>/post/2009-10-05-edge-case-very-long-title/</loc>
-  </url>
-  
-  <url>
-    <loc>/project/2009-10-05-edge-case-very-long-title/</loc>
-  </url>
-  
-  <url>
     <loc>/tags/</loc>
-  </url>
-  
-  <url>
-    <loc>/tag/title/</loc>
   </url>
   
 </urlset>
